@@ -5,7 +5,6 @@
      - name: install firewalld
        apt:
           name: "{{a}}"
-          state: "{{b}}"
-          update_cache: "{{c}}"          
+          
            
 ...       
