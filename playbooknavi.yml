@@ -1,0 +1,11 @@
+---
+- name: configured grroupin git
+  hosts: servers
+  tasks:
+     - name: install firewalld
+       apt:
+          name: "{{a}}"
+          state: "{{b}}"
+          update_cache: "{{c}}"          
+           
+...       

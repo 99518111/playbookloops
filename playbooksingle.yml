@@ -1,0 +1,13 @@
+---
+- name: create user
+  hosts: 172.31.5.150
+  tasks:
+     - name: configure git 
+       apt:
+         name: "{{a}}"
+         state: "{{b}}"
+         update_cache: "{{c}}"
+          
+...         
+         
+       

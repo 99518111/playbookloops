@@ -1,0 +1,32 @@
+---
+- name: implementing loops
+  hosts: all
+  tasks:
+      - name: install s/w's
+        apt:
+           name: "{{item}}"
+           state: present
+           update_cache: yes
+        with_items:
+               - tree
+               - maven
+               - tomcat9
+               - tomcat9-admin
+      - name: checking connection
+        uri:
+          url: "{{item}}"
+          status_code: 200
+        with_items:
+              - http://172.31.1.235 
+              - http://172.31.5.150
+              
+            
+               
+               
+               
+
+...                 
+               
+
+                   
+

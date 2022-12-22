@@ -1,0 +1,12 @@
+---
+- name: create user
+  hosts: servers
+  tasks:
+      - name: crate user
+        user:
+           name: "{{a}}"
+           password: "{{b}}"
+           comment: "{{c}}"
+           home: "{{d}}"
+           shell: "{{e}}" 
+...           
